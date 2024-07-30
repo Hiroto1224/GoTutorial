@@ -17,6 +17,20 @@ func Hello(name string) (string, error) {
 	return message, nil
 }
 
+// Hellos 名前と挨拶を関連づけるマップを返却する
+func Hellos(names []string) (map[string]string, error) {
+	messages := make(map[string]string)
+	for _, name := range names {
+		message, err := Hello(name)
+		if err != nil {
+			return nil, err
+		}
+
+		messages[name] = message
+	}
+	return messages, nil
+}
+
 // 　用意した複数の挨拶をランダムで返却する
 func randomFormat() string {
 	formats := []string{
