@@ -3,6 +3,7 @@ package greetings
 import (
 	"errors"
 	"fmt"
+	"math/rand"
 )
 
 func Hello(name string) (string, error) {
@@ -12,6 +13,17 @@ func Hello(name string) (string, error) {
 	}
 
 	// := 宣言と初期化を行うショートカット
-	message := fmt.Sprintf("Hi, %v. welcome!", name)
+	message := fmt.Sprintf(randomFormat(), name)
 	return message, nil
+}
+
+// 　用意した複数の挨拶をランダムで返却する
+func randomFormat() string {
+	formats := []string{
+		"Hi, %v. Welcome!",
+		"Great to see you, %v!",
+		"Hail, %v! Well met!",
+	}
+
+	return formats[rand.Intn(len(formats))]
 }

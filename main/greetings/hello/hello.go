@@ -16,7 +16,7 @@ func main() {
 	log.SetFlags(0)
 
 	// greetingsファイルにて作成したHello関数を呼び出す
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Gladys")
 
 	// エラーが返却された場合はコンソールにエラーを出力し、プログラムを終了する。
 	if err != nil {
