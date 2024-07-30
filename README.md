@@ -23,25 +23,20 @@ Go言語の学習を行うプロジェクト
 
 <pre>
 .
-├── .idea
-│   ├── .gitignore
-│   ├── modules.xml
-│   ├── tutorial.iml
-│   └── vcs.xml
 ├── README.md
 └── main
-├── greetings
-│   ├── go.mod
-│   ├── greetings
-│   │   ├── greetings.go
-│   │   └── greetings_test.go
-│   └── hello
-│       ├── hello
-│       └── hello.go
-└── hello
-├── go.mod
-├── go.sum
-└── hello.go
+    ├── greetings
+    │   ├── go.mod
+    │   ├── greetings
+    │   │   ├── greetings.go
+    │   │   └── greetings_test.go
+    │   └── hello
+    │       ├── hello
+    │       └── hello.go
+    └── hello
+        ├── go.mod
+        ├── go.sum
+        └── hello.go
 </pre>
 
 ## コマンド一覧
