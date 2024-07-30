@@ -21,26 +21,28 @@ Go言語の学習を行うプロジェクト
 
 <!-- Treコマンドを使ってディレクトリ構成を記載 -->
 
-.<br>
-├── .idea<br>
-│   ├── .gitignore<br>
-│   ├── modules.xml<br>
-│   ├── tutorial.iml<br>
-│   └── vcs.xml<br>
-├── README.md<br>
-└── main<br>
-├── greetings<br>
-│   ├── go.mod<br>
-│   ├── greetings<br>
-│   │   ├── greetings.go<br>
-│   │   └── greetings_test.go<br>
-│   └── hello<br>
-│       ├── hello<br>
-│       └── hello.go<br>
-└── hello<br>
-├── go.mod<br>
-├── go.sum<br>
-└── hello.go<br>
+<pre>
+.
+├── .idea
+│   ├── .gitignore
+│   ├── modules.xml
+│   ├── tutorial.iml
+│   └── vcs.xml
+├── README.md
+└── main
+├── greetings
+│   ├── go.mod
+│   ├── greetings
+│   │   ├── greetings.go
+│   │   └── greetings_test.go
+│   └── hello
+│       ├── hello
+│       └── hello.go
+└── hello
+├── go.mod
+├── go.sum
+└── hello.go
+</pre>
 
 ## コマンド一覧
 
