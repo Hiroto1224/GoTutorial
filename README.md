@@ -33,17 +33,24 @@ Go言語の学習を行うプロジェクト
     │   └── hello
     │       ├── hello
     │       └── hello.go
-    └── hello
-        ├── go.mod
-        ├── go.sum
-        └── hello.go
+    ├── hello
+    │   ├── go.mod
+    │   ├── go.sum
+    │   └── hello.go
+    └── workspace
+        ├── example
+        ├── go.work
+        └── hello
+            ├── go.mod
+            ├── go.sum
+            └── hello.go
 </pre>
 
 ## コマンド一覧
 
 | コマンド       | 使用箇所・用途               |
 |------------|-----------------------|
-| go run .   | go.modファイルの存在するディレクトリ |
-| go test    | テストファイルのあるディレクトリ      |
-| go test -v | テストの経過が確認できる          |
+| go run .   | go.modファイルの存在するディレクトリ/<br/>mainのコードを実行 |
+| go test    | テストファイルのあるディレクトリ/<br/>テストを実行 |
+| go test -v | テストファイルのあるディレクトリ/<br/>テストの経過が確認できる |
 | go build   | 実行可能なバイナリファイル作成       |
